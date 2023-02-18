@@ -29,5 +29,7 @@ This folder contains the files to build a multi-container web app with Swarm Sta
 * * docker image rm jackhwl/gsd:first-ctr
 * Running a Containerized App
 * * docker container run -d --name web -p 8000:8080 jackhwl/gsd:first-ctr
+* Managing a Containerized App
 * * docker container ls
-
+* * docker container stop web
+* * docker container start web
