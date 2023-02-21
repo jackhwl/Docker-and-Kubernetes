@@ -33,3 +33,6 @@ This folder contains the files to build a multi-container web app with Swarm Sta
 * * docker container ls
 * * docker container stop web
 * * docker container start web
+## Section 5: Microservices and the Real World
+* * docker-compose up -d
+* * docker-compose down
