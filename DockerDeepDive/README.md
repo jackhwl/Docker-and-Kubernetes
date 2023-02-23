@@ -5,7 +5,9 @@
 * * docker image inspect
 * * docker system info
 * * docker image inspect redis
+* * docker image history redis
 * * docker image rm redis
+* * delete all images: docker image rm $(docker image ls -q) -f
 * * docker image folder: ls C:\ProgramData\Docker\windowsfilter
 * Uber Recap
 ## Section 6: Containerizing an App
@@ -13,6 +15,7 @@
 * * containerd: Its sole purpose in life was to manage container lifecycle operations — start | stop | pause | rm....
 # Docker aliases
 * [Dock Life: Using Docker for All The Things!](https://nystudio107.com/blog/dock-life-using-docker-for-all-the-things)
+* [Run More Stuff in Docker](https://jonathan.bergknoff.com/journal/run-more-stuff-in-docker/)
 * * alias composer='docker run --rm -it -v "$PWD":/app -v ${COMPOSER_HOME:-$HOME/.composer}:/tmp composer '
 * * alias composer1='docker run --rm -it -v "$PWD":/app -v ${COMPOSER_HOME:-$HOME/.composer}:/tmp composer:1 '
 * * alias node='docker run --rm -it -v "$PWD":/app -w /app node:16-alpine '
@@ -25,3 +28,6 @@
 * * alias ffmpeg='docker run --rm -it -v "$PWD":/app -w /app jrottenberg/ffmpeg '
 * * alias yo='docker run --rm -it -v "$PWD":/app nystudio107/node-yeoman:16-alpine '
 * * alias tree='f(){ docker run --rm -it -v "$PWD":/app johnfmorton/tree-cli tree "$@";  unset -f f; }; f'
+* * 
+* * docker container run -it ubuntu /bin/bash
+* * delete all containers: docker container rm $(docker container ls -aq) -f
