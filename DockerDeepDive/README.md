@@ -31,3 +31,5 @@
 * * 
 * * docker container run -it ubuntu /bin/bash
 * * delete all containers: docker container rm $(docker container ls -aq) -f
+* * build image(psweb): docker image build -t web:latest .
+* * Multi-stage Builds(atsea-sample-shop-app):  docker image build -t multi:stage .
