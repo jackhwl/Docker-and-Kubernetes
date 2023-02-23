@@ -33,3 +33,12 @@
 * * delete all containers: docker container rm $(docker container ls -aq) -f
 * * build image(psweb): docker image build -t web:latest .
 * * Multi-stage Builds(atsea-sample-shop-app):  docker image build -t multi:stage .
+# Deploying Apps with Docker Compose
+* * docker compose build
+* * docker compose up -d
+* * docker compose stop (volume saved)
+* * docker compose down (volume erased???)
+* * docker compose rm
+* * docker volume ls
+* * docker compose ps [Show the current state of the app]
+* * docker compose top [List the processes running inside of each service (container)]
