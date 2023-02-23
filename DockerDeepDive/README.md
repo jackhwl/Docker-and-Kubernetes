@@ -36,6 +36,8 @@
 # Deploying Apps with Docker Compose
 * * docker compose build
 * * docker compose up -d
+* * docker compose up -d --no-deps [service]
+* * docker compose start [service]
 * * docker compose stop (volume saved)
 * * docker compose down (volume erased???)
 * * docker compose rm
