@@ -9,3 +9,10 @@
 * * https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
 * Geting Started with kubectl
 * Web UI Dashboard
+* Set-Alias -Name k -Value kubectl
+* alias k="kubectl" (Mac/Linux)
+## Section 3: Creating Pods
+* * k create -f .\nginx.pod.yml --save-config
+* * k get pods
+* * k delete -f .\nginx.pod.yml
+* kubectl and YAML
