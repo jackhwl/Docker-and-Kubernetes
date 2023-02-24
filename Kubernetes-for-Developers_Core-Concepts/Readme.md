@@ -16,3 +16,7 @@
 * * k get pods
 * * k delete -f .\nginx.pod.yml
 * kubectl and YAML
+* k apply -f .\nginx-readiness-probe.pod.yml
+* k describe pod my-nginx
+* k exec my-nginx -it sh
+* Pod Health in Action
