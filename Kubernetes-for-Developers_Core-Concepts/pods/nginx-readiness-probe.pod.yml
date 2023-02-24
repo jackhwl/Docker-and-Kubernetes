@@ -11,7 +11,7 @@ spec:
     image: nginx:alpine
     resources:
       limits:
-        memory: "512Mi" #128 MB
+        memory: "128Mi" #128 MB
         cpu: "200m" #200 millicpu (.2 cpu or 20% of the cpu)
     ports:
     - containerPort: 80
