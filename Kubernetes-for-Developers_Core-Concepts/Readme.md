@@ -20,3 +20,13 @@
 * k describe pod my-nginx
 * k exec my-nginx -it sh
 * Pod Health in Action
+## Section 4: Creating Deployments
+* kubectl Deployments in Action
+* k create -f .\nginx.deployment.yml --save-config
+* k apply -f nginx.pod.yml
+* k describe deployment
+* k get deploy
+* k get deployments --show-labels
+* k scale -f .\nginx.deployment.yml --replicas=4
+* k delete -f .\nginx.deployment.yml
+
