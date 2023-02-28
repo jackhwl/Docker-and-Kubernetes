@@ -29,4 +29,6 @@
 * k get deployments --show-labels
 * k scale -f .\nginx.deployment.yml --replicas=4
 * k delete -f .\nginx.deployment.yml
-
+## Section 5: Creating Services
+* Creating a Service with kubectl
+* k port-forward pod/my-nginx-576498859f-jhztg 8080:80
