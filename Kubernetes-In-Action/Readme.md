@@ -1,0 +1,1 @@
+3.2.3 Using kubectl create to create the pod

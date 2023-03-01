@@ -32,3 +32,4 @@
 ## Section 5: Creating Services
 * Creating a Service with kubectl
 * k port-forward pod/my-nginx-576498859f-jhztg 8080:80
+* k port-forward deployment/my-nginx 8080:80
