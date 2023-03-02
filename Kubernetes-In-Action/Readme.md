@@ -25,3 +25,25 @@ $ kubectl label node docker-desktop gpu=true
 $ kubectl get nodes -l gpu=true
 $ kubectl create -f kubia-gpu.yaml
 ```
+## 3.6 Annotating pods
+```
+$ kubectl annotate pod kubia-manual mycompany.com/someannotation="foo bar"
+$ kubectl describe pod kubia-manual
+```
+## 3.7 Using namespaces to group resources
+```
+$ kubectl get ns
+$ kubectl get po --namespace kube-system
+$ kubectl create -f custom-namespace.yaml
+$ kubectl create namespace custom-namespace
+$ kubectl create -f kubia-manual.yaml -n custom-namespace
+```
+## 3.8 Stopping and removing pods
+```
+$ kubectl delete po kubia-gpu
+$ kubectl delete po -l creation_method=manual
+$ kubectl delete po -l rel=canary
+$ kubectl delete ns custom-namespace
+$ kubectl delete po --all
+$ kubectl delete all --all
+```
