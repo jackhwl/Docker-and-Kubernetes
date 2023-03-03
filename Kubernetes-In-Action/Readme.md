@@ -47,3 +47,9 @@ $ kubectl delete ns custom-namespace
 $ kubectl delete po --all
 $ kubectl delete all --all
 ```
+# Replication and other controllers: deploying managed pods
+## 4.1.2 Creating an HTTP-based liveness probe
+```
+$ kubectl logs mypod --previous
+$ kubectl describe po kubia-liveness
+```
