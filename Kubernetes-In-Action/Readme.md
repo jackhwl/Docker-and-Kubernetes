@@ -53,3 +53,13 @@ $ kubectl delete all --all
 $ kubectl logs mypod --previous
 $ kubectl describe po kubia-liveness
 ```
+## 4.2.2 Creating a ReplicationController
+```
+$ kubectl create -f kubia-rc.yaml
+$ kubectl get rc
+$ kubectl describe rc kubia
+$ kubectl label pod kubia-njdzh type=special
+$ k get po --show-labels
+$ kubectl label pod kubia-njdzh app=foo --overwrite
+$ kubectl edit rc kubia
+```
