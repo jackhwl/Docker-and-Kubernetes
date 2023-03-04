@@ -63,3 +63,9 @@ $ k get po --show-labels
 $ kubectl label pod kubia-njdzh app=foo --overwrite
 $ kubectl edit rc kubia
 ```
+## 4.2.6 Horizontally scaling pods
+```
+$ kubectl scale rc kubia --replicas=10
+$ kubectl edit rc kubia
+$ kubectl delete rc kubia --cascade=false
+```
