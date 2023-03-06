@@ -76,3 +76,12 @@ $ kubectl get rs
 $ kubectl describe rs
 $ kubectl delete rs kubia
 ```
+## 4.4 Running exactly one pod on each node with DaemonSets
+```
+$ kubectl create -f ssd-monitor-daemonset.yaml
+$ kubectl get ds
+$ kubectl get node
+$ kubectl label node minikube disk=ssd
+$ kubectl get po
+$ kubectl label node minikube disk=hdd --overwrite
+```
