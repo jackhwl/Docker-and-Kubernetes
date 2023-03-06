@@ -69,3 +69,10 @@ $ kubectl scale rc kubia --replicas=10
 $ kubectl edit rc kubia
 $ kubectl delete rc kubia --cascade=false
 ```
+## 4.3 Using ReplicaSets instead of ReplicationControllers
+```
+$ k create -f kubia-replicaset.yaml
+$ kubectl get rs
+$ kubectl describe rs
+$ kubectl delete rs kubia
+```
