@@ -91,3 +91,6 @@ $ kubectl get jobs
 $ kubectl logs batch-job-28qf4
 $ kubectl scale job multi-completion-batch-job --replicas 3
 ```
+## 4.6 Scheduling Jobs to run periodically or once in the future
+
+## Services: enabling clients to discover and talk to pods
