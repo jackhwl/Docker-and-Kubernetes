@@ -85,3 +85,9 @@ $ kubectl label node minikube disk=ssd
 $ kubectl get po
 $ kubectl label node minikube disk=hdd --overwrite
 ```
+## 4.5 Running pods that perform a single completable task
+```
+$ kubectl get jobs
+$ kubectl logs batch-job-28qf4
+$ kubectl scale job multi-completion-batch-job --replicas 3
+```
