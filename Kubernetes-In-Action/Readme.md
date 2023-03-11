@@ -94,3 +94,14 @@ $ kubectl scale job multi-completion-batch-job --replicas 3
 ## 4.6 Scheduling Jobs to run periodically or once in the future
 
 ## Services: enabling clients to discover and talk to pods
+$ kubectl create -f kubia-svc
+$ kubectl exec kubia-7sb9h -- curl -s http://10.105.246.252
+$ kubectl delete po --all
+$ kubectl exec -it kubia-3inly bash
+root@kubia-3inly:/# curl http://kubia.default.svc.cluster.local
+root@kubia-3inly:/# curl http://kubia.default
+root@kubia-3inly:/# curl http://kubia
+root@kubia-3inly:/# cat /etc/resolv.conf
+* UNDERSTANDING WHY YOU CAN’T PING A SERVICE IP
+root@kubia-3inly:/# ping kubia
+
