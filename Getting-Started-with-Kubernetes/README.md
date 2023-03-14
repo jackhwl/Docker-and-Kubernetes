@@ -11,3 +11,10 @@
 * Creating Internet LoadBalancer Services
 ## Section 8: Kubernetes Deployments
 * Creating a Deployment YAML
+*  k apply -f deploy.yml
+* k get deploy
+* k get pod
+* k get rs
+* k get ep
+* k describe ep ps-lb
+* Deploying a Deployment
