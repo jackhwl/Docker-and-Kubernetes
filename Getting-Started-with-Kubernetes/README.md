@@ -9,3 +9,5 @@
 * k apply -f .\svc-nodeport.yml
 * k describe svc ps-nodeport
 * Creating Internet LoadBalancer Services
+## Section 8: Kubernetes Deployments
+* Creating a Deployment YAML
