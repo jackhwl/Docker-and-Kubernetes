@@ -104,4 +104,6 @@ root@kubia-3inly:/# curl http://kubia
 root@kubia-3inly:/# cat /etc/resolv.conf
 * UNDERSTANDING WHY YOU CAN’T PING A SERVICE IP
 root@kubia-3inly:/# ping kubia
+## 5.2 Connecting to services living outside the cluster
+$ kubectl get endpoints kubia
 
