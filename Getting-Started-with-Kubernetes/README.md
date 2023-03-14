@@ -8,3 +8,4 @@
 * kubectl expose pod hello-pod --name=hello-svc --target-port=8080 --type=NodePort
 * k apply -f .\svc-nodeport.yml
 * k describe svc ps-nodeport
+* Creating Internet LoadBalancer Services
