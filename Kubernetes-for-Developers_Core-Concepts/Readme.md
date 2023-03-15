@@ -2,11 +2,16 @@
 * * kubectl version --output=yaml
 * * kubectl cluster-info
 * * kubectl get all
-* * kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+* * 5 steps to create a dashboard
+* * 1. kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+* * 2. kubectl apply -f dashboard.adminuser.yml
+* * 3. kubectl -n kubernetes-dashboard create token admin-user
+* * 4. kubectl proxy
+* * 5. [Dashboard](http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/)
 * * [Creating a Service Account, Creating a ClusterRoleBinding](https://github.com/kubernetes/dashboard/blob/master/docs/user/access-control/creating-sample-user.md)
 * * kubectl -n kubernetes-dashboard create token admin-user (Getting a Bearer Token)
 * * kubectl proxy
-* * https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/
+* * [Deploy and Access the Kubernetes Dashboard](https://kubernetes.io/docs/tasks/access-application-cluster/web-ui-dashboard/)
 * Geting Started with kubectl
 * Web UI Dashboard
 * Set-Alias -Name k -Value kubectl
