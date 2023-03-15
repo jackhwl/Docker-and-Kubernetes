@@ -17,8 +17,11 @@
 * Set-Alias -Name k -Value kubectl
 * alias k="kubectl" (Mac/Linux)
 ## Section 3: Creating Pods
+* * k run [pod-name] --image=nginx:alpine
+* * k port-forward [name-of-pod] 8080:80    ext:int
 * * k create -f .\nginx.pod.yml --save-config
 * * k get pods
+* * k delete pod [pod-name]
 * * k delete -f .\nginx.pod.yml
 * kubectl and YAML
 * k apply -f .\nginx-readiness-probe.pod.yml
@@ -34,6 +37,7 @@
 * k get deployments --show-labels
 * k scale -f .\nginx.deployment.yml --replicas=4
 * k delete -f .\nginx.deployment.yml
+* k describe [pod | deployment] [pod-name | deployment-name]
 ## Section 5: Creating Services
 * Creating a Service with kubectl
 * k port-forward pod/my-nginx-576498859f-jhztg 8080:80
