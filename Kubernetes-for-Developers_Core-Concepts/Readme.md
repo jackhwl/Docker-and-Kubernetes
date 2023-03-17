@@ -42,3 +42,6 @@
 * Creating a Service with kubectl
 * k port-forward pod/my-nginx-576498859f-jhztg 8080:80
 * k port-forward deployment/my-nginx 8080:80
+## Section 6: Understanding Storage Options
+* kubectl apply -f nginx-alpine-emptyDir.pod.yml
+* kubectl port-forward nginx-alpine-volume 8080:80
