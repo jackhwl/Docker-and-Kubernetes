@@ -17,3 +17,11 @@
 * helm env
 ## Section 5: Building Helm Charts
 * Demo: Building a Helm Chart
+* helm install demo-guestbook guestbook
+* helm get manifest demo-guestbook
+* m service frondend
+* pod get service port from envorinment variables
+* k exec pod/frontend-97856d7d-gvxc5 env
+* curl not ping service ip
+* service’s cluster IP is a virtual IP, and only has meaning when combined with the service port
+* k describe svc frontend
