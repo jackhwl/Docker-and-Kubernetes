@@ -25,3 +25,32 @@
 * curl not ping service ip
 * service’s cluster IP is a virtual IP, and only has meaning when combined with the service port
 * k describe svc frontend
+* k get po --all-namespaces
+* list ingress controller log 
+* k logs -n ingress-nginx pod/ingress-nginx-controller-6bc476f787-tgb6g
+* helm install & uninstall
+* W10
+```
+1. To make sure you're starting on a clean slate, run `minikube delete`. Then run `minikube start`.
+2. Next run `minikube addons enable ingress`
+3. Run `kubectl get pods -n ingress-nginx`. You should see a list of three pods prefixed `ingress-nginx-*` if all went well
+4. Edit /etc/hosts, adding the lines below:
+127.0.0.1 frontend.minikube.local
+127.0.0.1 backend.minikube.local
+5. Deploy the helm chart with `helm install demo-guestbook guestbook`
+6. Run `minikube tunnel`. You may be asked for your password. Enter it and then head on over to http://frontend.minikube.local/. Note that you will have to keep this terminal window running.
+7. Profit!
+```
+* Mac
+```
+1. To make sure you're starting on a clean slate, run `minikube delete`. Then run `minikube start`.
+2. Next run `minikube addons enable ingress`
+3. Run `kubectl get pods -n ingress-nginx`. You should see a list of three pods prefixed `ingress-nginx-*` if all went well
+4. Edit /etc/hosts, adding the lines below:
+127.0.0.1 frontend.minikube.local
+127.0.0.1 backend.minikube.local
+5. Deploy the helm chart with `helm install demo-guestbook guestbook`
+6.Run `minikube tunnel`.
+
+7. Visit the url as normal.
+```
