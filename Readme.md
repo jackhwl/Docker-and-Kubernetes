@@ -64,3 +64,11 @@
 * [install ingress](https://kubernetes.github.io/ingress-nginx/deploy/)
 * 127.0.0.1 frontend.minikube.local
 * 127.0.0.1 backend.minikube.local
+* docker run --init --rm --publish 4200:4200 jackhwl/frontend:1.0
+
+* helm upgrade demo-guestbook guestbook
+* k describe pod -l app=frontend
+* helm status demo-guestbook
+* helm rollback demo-guestbook 1
+* helm history demo-guestbook
+* Demo: Installing a Helm Chart
