@@ -54,3 +54,13 @@
 
 7. Visit the url as normal.
 ```
+## minikube version
+* m delete
+* m start
+* m addons enable ingress
+* 127.0.0.1 frontend.minikube.local
+* 127.0.0.1 backend.minikube.local
+## docker-desktop version
+* [install ingress](https://kubernetes.github.io/ingress-nginx/deploy/)
+* 127.0.0.1 frontend.minikube.local
+* 127.0.0.1 backend.minikube.local
