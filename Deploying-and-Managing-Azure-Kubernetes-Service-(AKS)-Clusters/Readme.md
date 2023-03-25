@@ -31,4 +31,11 @@ $ACR_NAME="viglobal"
  * DELETE AKS & RG
  * az aks delete -g AKSVI -n AKS-PORTAL
  * az group delete -n AKSVI
+* Start, Stop AKS Cluster
+* az aks stop -n $AKSCluster -g $RG 
+* az aks show -n $AKSCluster -g $RG --query powerState
+* az aks start -n $AKSCluster -g $RG 
 
+* $SSH=(Get-Content ~\.ssh\id_rsa.pub)
+* az Deployment group create -f aks-arm.json -g $RG --parameters sshRSAPublicKey=$SSH clusterName=GB-AKS2 agentCount=3
+* az aks delete -g viglobal -n GB-AKS2

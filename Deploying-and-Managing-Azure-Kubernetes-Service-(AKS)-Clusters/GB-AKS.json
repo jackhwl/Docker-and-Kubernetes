@@ -1,0 +1,106 @@
+{
+  "id": "/subscriptions/5fdd6b4f-8693-494e-8c25-5d544c15583c/resourcegroups/viGlobal/providers/Microsoft.ContainerService/managedClusters/GB-AKS",
+  "location": "eastus",
+  "name": "GB-AKS",
+  "type": "Microsoft.ContainerService/ManagedClusters",
+  "properties": {
+    "provisioningState": "Succeeded",
+    "powerState": {
+      "code": "Running"
+    },
+    "kubernetesVersion": "1.24.9",
+    "dnsPrefix": "GB-AKS-dns",
+    "fqdn": "gb-aks-dns-0hyi1g1q.hcp.eastus.azmk8s.io",
+    "azurePortalFQDN": "gb-aks-dns-0hyi1g1q.portal.hcp.eastus.azmk8s.io",
+    "agentPoolProfiles": [
+      {
+        "name": "agentpool",
+        "count": 3,
+        "vmSize": "Standard_B2s",
+        "osDiskSizeGB": 128,
+        "osDiskType": "Managed",
+        "kubeletDiskType": "OS",
+        "maxPods": 110,
+        "type": "VirtualMachineScaleSets",
+        "enableAutoScaling": false,
+        "provisioningState": "Succeeded",
+        "powerState": {
+          "code": "Running"
+        },
+        "orchestratorVersion": "1.24.9",
+        "enableNodePublicIP": false,
+        "mode": "System",
+        "osType": "Linux",
+        "osSKU": "Ubuntu",
+        "nodeImageVersion": "AKSUbuntu-1804gen2containerd-202303.06.0",
+        "enableFIPS": false
+      }
+    ],
+    "servicePrincipalProfile": {
+      "clientId": "msi"
+    },
+    "addonProfiles": {
+      "azureKeyvaultSecretsProvider": {
+        "enabled": false,
+        "config": null
+      },
+      "azurepolicy": {
+        "enabled": false,
+        "config": null
+      },
+      "httpApplicationRouting": {
+        "enabled": false,
+        "config": null
+      }
+    },
+    "nodeResourceGroup": "MC_viGlobal_GB-AKS_eastus",
+    "enableRBAC": true,
+    "networkProfile": {
+      "networkPlugin": "kubenet",
+      "loadBalancerSku": "Standard",
+      "loadBalancerProfile": {
+        "managedOutboundIPs": {
+          "count": 1
+        },
+        "effectiveOutboundIPs": [
+          {
+            "id": "/subscriptions/5fdd6b4f-8693-494e-8c25-5d544c15583c/resourceGroups/MC_viGlobal_GB-AKS_eastus/providers/Microsoft.Network/publicIPAddresses/bfea2891-0f76-49dd-97b0-3f7053163035"
+          }
+        ]
+      },
+      "podCidr": "10.244.0.0/16",
+      "serviceCidr": "10.0.0.0/16",
+      "dnsServiceIP": "10.0.0.10",
+      "dockerBridgeCidr": "172.17.0.1/16",
+      "outboundType": "loadBalancer",
+      "podCidrs": ["10.244.0.0/16"],
+      "serviceCidrs": ["10.0.0.0/16"],
+      "ipFamilies": ["IPv4"]
+    },
+    "maxAgentPools": 100,
+    "apiServerAccessProfile": {
+      "enablePrivateCluster": false
+    },
+    "identityProfile": {
+      "kubeletidentity": {
+        "resourceId": "/subscriptions/5fdd6b4f-8693-494e-8c25-5d544c15583c/resourcegroups/MC_viGlobal_GB-AKS_eastus/providers/Microsoft.ManagedIdentity/userAssignedIdentities/GB-AKS-agentpool",
+        "clientId": "c48724f3-3dbd-43a7-95a1-51c942fc2f71",
+        "objectId": "5b6f7dc8-1278-46ee-a6a3-685c4e00411f"
+      }
+    },
+    "autoUpgradeProfile": {
+      "upgradeChannel": "patch"
+    },
+    "disableLocalAccounts": false,
+    "securityProfile": {}
+  },
+  "identity": {
+    "type": "SystemAssigned",
+    "principalId": "34a83dd2-d9bf-4d23-bf8e-bfe375a30d72",
+    "tenantId": "49f292cb-07f1-4e23-a6be-28db00c8ef05"
+  },
+  "sku": {
+    "name": "Basic",
+    "tier": "Free"
+  }
+}
