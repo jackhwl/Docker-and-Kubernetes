@@ -10,3 +10,7 @@
 * k get svc --namespace kube-system
 * k describe deployment coredns --namespace kube-system | more
 * k get configmaps --namespace kube-system coredns -o yaml | more
+
+## Section 3: Configuring and Managing Application Access with Services
+* Demo: Exposing and Accessing applications with Services -ClusterIP
+* k get pods --show-labels
