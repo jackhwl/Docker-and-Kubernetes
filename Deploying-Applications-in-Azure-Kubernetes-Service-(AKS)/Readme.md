@@ -14,3 +14,5 @@ $ACR_NAME="viglobal"
 * az acr repository show -n $ACR_NAME --repository frontend -o table
 * az acr repository show-tags -n $ACR_NAME --repository frontend -o table
 * az acr show -n $ACR_NAME -o table
+* attach the ACR to our AKS Cluster (could also do that on create)
+* az aks update -n $AKSCluster -g $RG --attach-acr $ACR_NAME
