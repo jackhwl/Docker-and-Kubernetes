@@ -14,3 +14,5 @@
 ## Section 3: Configuring and Managing Application Access with Services
 * Demo: Exposing and Accessing applications with Services -ClusterIP
 * k get pods --show-labels
+* Demo: Exposing and Accessing applications with Services -NodePort
+* k apply -f .\frontend-service-nodeport.yaml
