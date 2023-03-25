@@ -16,3 +16,5 @@
 * k get pods --show-labels
 * Demo: Exposing and Accessing applications with Services -NodePort
 * k apply -f .\frontend-service-nodeport.yaml
+* Demo: Exposing and Accessing applications with Services -LoadBalancer
+* k apply -f .\frontend-service-loadbalancer.yaml
