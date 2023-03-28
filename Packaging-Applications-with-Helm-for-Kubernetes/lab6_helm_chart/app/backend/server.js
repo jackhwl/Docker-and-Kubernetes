@@ -5,6 +5,7 @@ var app = express();
 var mongodb = require('mongodb');
 
 var MONGODB_URI = process.env["MONGODB_URI"];
+console.log(MONGODB_URI);
 
 var mongoClient = mongodb.MongoClient;
 
