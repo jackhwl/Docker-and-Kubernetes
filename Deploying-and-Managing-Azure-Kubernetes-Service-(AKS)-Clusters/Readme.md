@@ -66,6 +66,7 @@ az group delete -n AKSVI
 * az acr repository delete --name $ACR_NAME --image frontend:1.0 -y
 * az acr repository delete --name $ACR_NAME --image frontend:1.1 -y
 * az acr repository delete --name $ACR_NAME --image frontend:2.0 -y
+* az acr delete -n $ACR_NAME -y
 * az aks delete -g $RG -n $AKSCluster -y
 
 
