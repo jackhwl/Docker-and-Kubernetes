@@ -75,3 +75,5 @@
 
 * docker build --tag jackhwl/backend:2.0 .
 * docker push jackhwl/backend:2.0
+
+* k delete all --all -n ingress-nginx
