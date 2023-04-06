@@ -13,7 +13,7 @@ spec:
         app: frontend
     spec:
       containers:
-      - image: jackhwl/frontend:1.1
+      - image: jackhwl/frontend:1.0
         imagePullPolicy: Always
         name: frontend
         ports:

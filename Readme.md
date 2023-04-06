@@ -72,3 +72,6 @@
 * helm rollback demo-guestbook 1
 * helm history demo-guestbook
 * Demo: Installing a Helm Chart
+
+* docker build --tag jackhwl/backend:2.0 .
+* docker push jackhwl/backend:2.0
