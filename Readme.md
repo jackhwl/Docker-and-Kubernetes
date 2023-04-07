@@ -79,3 +79,9 @@
 * delete ingress to free up IIS
 * k delete all --all -n ingress-nginx
 * [install ingress](https://kubernetes.github.io/ingress-nginx/deploy/)
+
+* helm install demo-guestbook guestbook
+* helm upgrade demo-guestbook guestbook
+* k get pods
+* helm get manifest demo-guestbook 
+* Demo: Building an Umbrella Helm Chart
