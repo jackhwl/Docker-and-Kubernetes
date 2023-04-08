@@ -17,7 +17,7 @@ spec:
         imagePullPolicy: Always
         name: {{ .Release.Name }}-{{ .Chart.Name }}
         ports:
-        - name: frontend
+        - name: http
           containerPort: 4200
         env:
         - name: BACKEND_URI
