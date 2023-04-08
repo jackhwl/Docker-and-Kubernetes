@@ -95,3 +95,4 @@
 * k logs pod/demo-guestbook-backend-689b5b8498-6fscd
 * helm template guestbook
 * Demo: Adding Template Logic
+* Demo: Installing Dev and Test Release
