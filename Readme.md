@@ -85,3 +85,6 @@
 * k get pods
 * helm get manifest demo-guestbook 
 * Demo: Building an Umbrella Helm Chart
+
+## Section 6: Customizing Charts with Helm Templates
+* Demo: Customizing Frontend Chart Values
