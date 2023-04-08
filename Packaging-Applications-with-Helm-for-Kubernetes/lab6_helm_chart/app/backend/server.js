@@ -11,17 +11,21 @@ var mongoClient = mongodb.MongoClient;
 
 
 var collection;
-var db = mongoClient.connect(MONGODB_URI, {
-  autoReconnect: true,
-  reconnectInterval: 10000,
-  reconnectTries: Number.MAX_VALUE,
-  useNewUrlParser: true
-}, function (err, db) {
-  if (err)
-    throw err;
-  console.log("connected to the mongoDB !");
-  collection = db.db('guestbook').collection('greeetings');
-});
+var db = mongoClient.connect(
+  MONGODB_URI,
+  {
+    autoReconnect: true,
+    reconnectInterval: 10000,
+    reconnectTries: Number.MAX_VALUE,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  },
+  function (err, db) {
+    if (err) throw err;
+    console.log("connected to the mongoDB !");
+    collection = db.db("guestbook").collection("greeetings");
+  }
+);
 
 app.use(bodyParser.json());
 
