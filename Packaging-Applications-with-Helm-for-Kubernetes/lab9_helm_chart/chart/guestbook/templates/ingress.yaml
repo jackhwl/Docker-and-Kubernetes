@@ -3,6 +3,7 @@ kind: Ingress
 metadata:
   name: {{ .Release.Name }}-{{ .Chart.Name }}-ingress
 spec:
+  ingressClassName: nginx
   rules:
 {{- range .Values.ingress.hosts }}
   - host: {{ $.Release.Name }}.{{ .host.domain }}
