@@ -88,3 +88,10 @@
 
 ## Section 6: Customizing Charts with Helm Templates
 * Demo: Customizing Frontend Chart Values
+* helm uninstall demo-guestbook
+* helm template guestbook
+* helm install demo-guestbook guestbook --dry-run --debug
+* view single pod error log
+* k logs pod/demo-guestbook-backend-689b5b8498-6fscd
+* helm template guestbook
+* Demo: Adding Template Logic
