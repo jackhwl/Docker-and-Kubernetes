@@ -110,3 +110,11 @@
 * helm dependency update guestbook
 * helm dependency list guestbook
 * Defining Dependencies
+* All charts are downloaded with "helm dependency update", partial installation with "helm install",
+* "--set .." overrides value.yaml, conditions override tags.
+* helm repo add chartmuseum http://localhost:8080
+* helm repo list
+* helm repo update
+* helm search repo chartmuseum
+* helm get manifest dev
+* Demo: Managing Dependencies
