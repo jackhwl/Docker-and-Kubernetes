@@ -118,3 +118,6 @@
 * helm search repo chartmuseum
 * helm get manifest dev
 * Demo: Managing Dependencies
+* helm install dev guestbook --set backend.enabled=false --set database.enabled=false
+* helm install dev guestbook --set tags.api=false
+* Demo: Controlling Dependencies with Conditions and Tags

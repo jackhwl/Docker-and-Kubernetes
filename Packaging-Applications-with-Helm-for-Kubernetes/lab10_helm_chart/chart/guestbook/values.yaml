@@ -1,4 +1,5 @@
 backend:
+  enabled: true
   secret:
     mongodb_uri:
       username: admin
@@ -7,8 +8,11 @@ backend:
     enabled: false
 frontend:
   ingress:
-    enabled: false
-
+    enabled: true
+database:
+  enabled: true
+tags:
+  api: true
 ingress:
   hosts:
     - host:
