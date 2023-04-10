@@ -121,3 +121,11 @@
 * helm install dev guestbook --set backend.enabled=false --set database.enabled=false
 * helm install dev guestbook --set tags.api=false
 * Demo: Controlling Dependencies with Conditions and Tags
+
+## Section 8: Using Existing Helm Chart
+* helm search repo mongodb
+* helm dependency update guestbook
+* solve policy/v1beta1 issue in kubernetes 1.25
+* helm pull "stable/mongodb" --untar
+* change "policy/v1beta1" to "policy/v1"
+* helm package mongodb
