@@ -129,3 +129,6 @@
 * helm pull "stable/mongodb" --untar
 * change "policy/v1beta1" to "policy/v1"
 * helm package mongodb
+* https://artifacthub.io/ search for wordpress
+* helm install demo-wordpress stable/wordpress
+* Demo: Installing Wordpress in Kubernetes in 1 Minute
