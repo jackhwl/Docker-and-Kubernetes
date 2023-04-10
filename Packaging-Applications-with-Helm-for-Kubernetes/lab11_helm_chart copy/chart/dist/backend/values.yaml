@@ -1,0 +1,18 @@
+secret:
+  mongodb_uri:
+    username: your_db_username
+    password: your_db_password
+    dbchart: database
+    dbport: 27017
+    dbconn: "guestbook?authSource=admin"
+#              "mongodb://admin:password@mongodb:27017/guestbook?authSource=admin"
+replicaCount: 1
+image:
+  repository: jackhwl/backend
+  tag: "2.0"
+service:
+  port: 80
+  type: ClusterIP
+ingress:
+  enabled: true
+  host: backend.minikube.local
