@@ -50,6 +50,7 @@ az group delete -n AKSVI
 * az acr import -n $ACR_NAME --source docker.io/jackhwl/frontend:1.1 -t frontend:1.1
 * az acr import -n $ACR_NAME --source docker.io/jackhwl/frontend:2.0 -t frontend:2.0
 * az Deployment group create -f aks-arm.json -g $RG --parameters sshRSAPublicKey=$SSH clusterName=$AKSCluster agentCount=3
+* or az Deployment group create -f aks-arm.bicep -g $RG --parameters sshRSAPublicKey=$SSH clusterName=$AKSCluster agentCount=3
 * az aks update -n $AKSCluster -g $RG --attach-acr $ACR_NAME
 * az aks get-credentials -g $RG -n $AKSCluster --overwrite-existing
 
@@ -69,4 +70,5 @@ az group delete -n AKSVI
 * az acr delete -n $ACR_NAME -y
 * az aks delete -g $RG -n $AKSCluster -y
 
-
+* 
+* az bicep decompile --file .\aks-arm.json
