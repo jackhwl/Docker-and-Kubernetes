@@ -2,12 +2,12 @@
  ## Section 3 Build and Manage an AKS Cluster
  * Demo: Communicating with an AKS Cluster 
  ```
-$RG="viGlobal"
-$AKSCluster="GB-AKS"
+$RG="wenlinRG"
+$AKSCluster="Wenlin-AKS"
 $Regin="eastus"
 $Sub="5fdd6b4f-8693-494e-8c25-5d544c15583c"
 $TenantName="aderant.onmicrosoft.com"
-$ACR_NAME="viglobal"
+$ACR_NAME="wenlinACR"
 ```
  * az login --scope https://management.core.windows.net//.default
  * az aks get-credentials --name AKS-PORTAL --resource-group AKSVI
@@ -40,7 +40,7 @@ $ACR_NAME="viglobal"
 
 * $SSH=(Get-Content ~\.ssh\id_rsa.pub)
 * az Deployment group create -f aks-arm.json -g $RG --parameters sshRSAPublicKey=$SSH clusterName=GB-AKS2 agentCount=3
-* az aks delete -g viglobal -n GB-AKS2
+* az aks delete -g $ACR_NAME -n GB-AKS2
 az group delete -n AKSVI
 
 * az login
