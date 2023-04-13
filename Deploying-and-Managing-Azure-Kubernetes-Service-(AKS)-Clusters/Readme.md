@@ -8,6 +8,7 @@ $Regin="eastus"
 $Sub="5fdd6b4f-8693-494e-8c25-5d544c15583c"
 $TenantName="aderant.onmicrosoft.com"
 $ACR_NAME="wenlinACR"
+$STORAGE_ACCOUNT="wenlinstorage"
 ```
  * az login --scope https://management.core.windows.net//.default
  * az aks get-credentials --name AKS-PORTAL --resource-group AKSVI
@@ -72,3 +73,9 @@ az group delete -n AKSVI
 
 * 
 * az bicep decompile --file .\aks-arm.json
+
+* az storage account create -n $STORAGE_ACCOUNT -g $RG -l eastus --sku Standard_RAGRS
+* az storage container create -n wenlinblobs
+* az storage container create -n wenlinblobs --account-name wenlinstorage
+* az storage account delete -n wenlinstorage -g $RG -y
+* az group delete -n $RG -y

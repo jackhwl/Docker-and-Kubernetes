@@ -1,0 +1,71 @@
+{
+  "sku": {
+    "name": "Standard_RAGRS",
+    "tier": "Standard"
+  },
+  "kind": "StorageV2",
+  "id": "/subscriptions/5fdd6b4f-8693-494e-8c25-5d544c15583c/resourceGroups/viGlobal/providers/Microsoft.Storage/storageAccounts/wenlinstorage",
+  "name": "wenlinstorage",
+  "type": "Microsoft.Storage/storageAccounts",
+  "location": "eastus",
+  "tags": {},
+  "properties": {
+    "dnsEndpointType": "Standard",
+    "defaultToOAuthAuthentication": false,
+    "publicNetworkAccess": "Enabled",
+    "keyCreationTime": {
+      "key1": "2023-04-13T11:15:20.2137741Z",
+      "key2": "2023-04-13T11:15:20.2137741Z"
+    },
+    "allowCrossTenantReplication": true,
+    "privateEndpointConnections": [],
+    "minimumTlsVersion": "TLS1_2",
+    "allowBlobPublicAccess": true,
+    "allowSharedKeyAccess": true,
+    "networkAcls": {
+      "bypass": "AzureServices",
+      "virtualNetworkRules": [],
+      "ipRules": [],
+      "defaultAction": "Allow"
+    },
+    "supportsHttpsTrafficOnly": true,
+    "encryption": {
+      "requireInfrastructureEncryption": false,
+      "services": {
+        "file": {
+          "keyType": "Account",
+          "enabled": true,
+          "lastEnabledTime": "2023-04-13T11:15:20.2137741Z"
+        },
+        "blob": {
+          "keyType": "Account",
+          "enabled": true,
+          "lastEnabledTime": "2023-04-13T11:15:20.2137741Z"
+        }
+      },
+      "keySource": "Microsoft.Storage"
+    },
+    "accessTier": "Hot",
+    "provisioningState": "Succeeded",
+    "creationTime": "2023-04-13T11:15:20.0731425Z",
+    "primaryEndpoints": {
+      "dfs": "https://wenlinstorage.dfs.core.windows.net/",
+      "web": "https://wenlinstorage.z13.web.core.windows.net/",
+      "blob": "https://wenlinstorage.blob.core.windows.net/",
+      "queue": "https://wenlinstorage.queue.core.windows.net/",
+      "table": "https://wenlinstorage.table.core.windows.net/",
+      "file": "https://wenlinstorage.file.core.windows.net/"
+    },
+    "primaryLocation": "eastus",
+    "statusOfPrimary": "available",
+    "secondaryLocation": "westus",
+    "statusOfSecondary": "available",
+    "secondaryEndpoints": {
+      "dfs": "https://wenlinstorage-secondary.dfs.core.windows.net/",
+      "web": "https://wenlinstorage-secondary.z13.web.core.windows.net/",
+      "blob": "https://wenlinstorage-secondary.blob.core.windows.net/",
+      "queue": "https://wenlinstorage-secondary.queue.core.windows.net/",
+      "table": "https://wenlinstorage-secondary.table.core.windows.net/"
+    }
+  }
+}
