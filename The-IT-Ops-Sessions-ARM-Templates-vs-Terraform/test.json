@@ -1,7 +1,15 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {},
+  "parameters": {
+    "replication": {
+      "type": "string",
+      "defaultValue": "Premium_LRS",
+      "metadata": {
+        "description": "aaa"
+      }
+    }
+  },
   "functions": [],
   "variables": {},
   "resources": [
@@ -15,7 +23,7 @@
       "location": "[resourceGroup().location]",
       "kind": "StorageV2",
       "sku": {
-        "name": "Premium_LRS",
+        "name": "[parameters('replication')]",
         "tier": "Premium"
       }
     }
