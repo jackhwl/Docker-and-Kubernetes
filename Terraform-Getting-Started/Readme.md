@@ -4,3 +4,4 @@
 *  Terraform v1.5.1 on windows_amd64
 ## Section 4: Using Input Variables and Outputs
 * Local Values Syntax
+* TF_VAR_client_secret=""

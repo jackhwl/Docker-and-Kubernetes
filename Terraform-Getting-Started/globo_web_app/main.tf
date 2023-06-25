@@ -3,11 +3,11 @@
 ##################################################################################
 
 provider "azurerm" {
-  version = "~> 1.0"
-  alias = "networking"
+  version         = "~> 1.0"
+  alias           = "networking"
   subscription_id = var.subscription_id
-  client_id = var.client_id
-  client_secret = var.client_secret
+  client_id       = var.client_id
+  client_secret   = var.client_secret
 }
 
 ##################################################################################

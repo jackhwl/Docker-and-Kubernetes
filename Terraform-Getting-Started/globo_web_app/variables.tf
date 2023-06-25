@@ -1,17 +1,17 @@
 variable "subscription_id" {
-  type = string
+  type        = string
   description = "azure subscription id"
-  sensitive = false
+  sensitive   = false
 }
 
 variable "client_id" {
-  type = string
+  type        = string
   description = "azure client id"
-  sensitive = false
+  sensitive   = false
 }
 
 variable "client_secret" {
-  type = string
+  type        = string
   description = "azure client secret"
-  sensitive = true
+  sensitive   = true
 }
