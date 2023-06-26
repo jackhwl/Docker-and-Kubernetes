@@ -22,3 +22,4 @@ Overall, Azure Bicep simplifies the authoring and management of Azure resource d
 * az bicep install
 * az bicep upgrade
 * az bicep version
+* Demo: Install Tooling:
