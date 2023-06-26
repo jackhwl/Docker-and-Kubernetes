@@ -23,3 +23,14 @@ Overall, Azure Bicep simplifies the authoring and management of Azure resource d
 * az bicep upgrade
 * az bicep version
 * Demo: Install Tooling:
+* How is Bicep Different from ARM Templates?
+* Contents of a Bicep File
+* * param demoParam string ='Contoso'
+* * var demoVar ='example value'
+* * resource demoRes 'type' = {...}
+* * output demoOutput string = demoRes.name
+
+* * Provide values during deployment that allow the same template to be used with different environments
+* * Define values that are reused in your templates. They can be constructed from parameter values
+* * Specify the resources to deploy
+* * Return values from the deployed resources
