@@ -47,3 +47,9 @@ az group create --name $RG --location $location
 az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --what-if
 * The resources in your file must match the target scope, and the target scope must match the deployment command
 * Demo: Authoring and Deploying Bicep
+* Create an Azure resource group using Terraform
+* * terraform init
+* * terraform plan -out main.tfplan
+* * terraform apply main.tfplan
+* * terraform plan -destroy -out main.destroy.tfplan
+* * terraform apply main.destroy.tfplan
