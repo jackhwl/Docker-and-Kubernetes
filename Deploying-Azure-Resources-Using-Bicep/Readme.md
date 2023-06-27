@@ -34,3 +34,16 @@ Overall, Azure Bicep simplifies the authoring and management of Azure resource d
 * * Define values that are reused in your templates. They can be constructed from parameter values
 * * Specify the resources to deploy
 * * Return values from the deployed resources
+* bicep decompile .\arm-storage-account.json 
+* az login --only-show-errors -o table --query Dummy
+$subscription="5fdd6b4f-8693-494e-8c25-5d544c15583c"
+$RG="wenlin_bicepRG"
+$location="eastus"
+* az account set -s $Subscription
+# RG Scope
+az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep
+# Need the RG first!
+az group create --name $RG --location $location
+az deployment group create --resource-group $RG --template-file .\manual-arm-storage-account.bicep --what-if
+* The resources in your file must match the target scope, and the target scope must match the deployment command
+* Demo: Authoring and Deploying Bicep
