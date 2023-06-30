@@ -53,3 +53,12 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * terraform apply main.tfplan
 * * terraform plan -destroy -out main.destroy.tfplan
 * * terraform apply main.destroy.tfplan
+## Section 3: Advanced Concepts in Bicep
+* Demo: Parameters, Variables, and Outputs
+* * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep
+* * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters storage_name=storageaccount
+* * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters storage_name=storageaccount234893247
+* * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters prefix=store
+* * az resource list --resource-group $RG -o table
+* * az deployment group list --resource-group $RG -o table
+* * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters prefix=store --name=newnamestorage
