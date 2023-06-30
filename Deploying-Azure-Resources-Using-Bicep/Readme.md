@@ -66,3 +66,7 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters prefix=store sku=Premium_ZRS
 * Deploy with parameter file
 * * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters @storage-parameters.param.json
+* Create storage account with Terraform
+* * terraform init
+* * terraform plan -out .\main.tfplan
+* * terraform apply .\main.tfplan
