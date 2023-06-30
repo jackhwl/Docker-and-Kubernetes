@@ -62,3 +62,5 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * az resource list --resource-group $RG -o table
 * * az deployment group list --resource-group $RG -o table
 * * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters prefix=store --name=newnamestorage
+* Deploy with invalid SKU
+* * az deployment group create --resource-group $RG --template-file .\storage-parameters.bicep --parameters prefix=store sku=Premium_ZRS
