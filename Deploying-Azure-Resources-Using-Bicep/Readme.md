@@ -70,3 +70,10 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * terraform init
 * * terraform plan -out .\main.tfplan
 * * terraform apply .\main.tfplan
+* * az deployment group create --resource-group $RG --template-file .\vnet.bicep --parameters vnetname=firstvnet
+* Create vnet with Terraform
+* * terraform fmt
+* * terraform init
+* * terraform plan
+* * terraform apply -auto-approve
+* [if you want to use existing RG, you need import it to terraform ](https://gmusumeci.medium.com/how-to-import-an-existing-azure-resource-in-terraform-6d585f93ea02)
