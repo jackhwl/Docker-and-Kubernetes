@@ -77,3 +77,4 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * terraform plan
 * * terraform apply -auto-approve
 * [if you want to use existing RG, you need import it to terraform ](https://gmusumeci.medium.com/how-to-import-an-existing-azure-resource-in-terraform-6d585f93ea02)
+* * az deployment group create --resource-group $RG --template-file .\aks.bicep --parameters tierType=test
