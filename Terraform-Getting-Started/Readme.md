@@ -25,5 +25,6 @@ locals {
 }
 ```
 * * local.<key> local.instance_prefix, local.compon_tags.company
+* Adding Locals to the Configuration
 * TF_VAR_client_secret=""
 ## Section 5: Updating Your Configuration with More Resources
