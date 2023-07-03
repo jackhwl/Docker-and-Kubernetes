@@ -30,5 +30,7 @@ locals {
 * Adding Outputs to the Configuraton
 * Validate the Configuration
 * * terraform fmt -check
+* Using the Validate Command
+* * terraform validate
 * TF_VAR_client_secret=""
 ## Section 5: Updating Your Configuration with More Resources
