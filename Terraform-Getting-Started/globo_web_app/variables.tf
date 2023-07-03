@@ -19,7 +19,7 @@ variable "client_secret" {
 variable "company" {
   type        = string
   description = "Company name for resource tagging"
-  default   = "Globomantics"
+  default     = "Globomantics"
 }
 
 variable "project" {
