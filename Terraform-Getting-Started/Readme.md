@@ -32,5 +32,6 @@ locals {
 * * terraform fmt -check
 * Using the Validate Command
 * * terraform validate
-* TF_VAR_client_secret=""
+* Supplying Variable Values: Default value, -var flag, -var-file flag, terraform.tfvars / terraform.tfvars.json, .auto.tfvars / .auto.tfvars.json, TF_VAR_client_secret=""
+* * Order of Evaluation: TF_VAR_ environment variable > terraform.tfvars / terraform.tfvar.json > .auto.tfvars / .auto.tfvars.json > -var-file flag > -var flag > Command line prompt
 ## Section 5: Updating Your Configuration with More Resources
