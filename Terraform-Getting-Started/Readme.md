@@ -33,5 +33,9 @@ locals {
 * Using the Validate Command
 * * terraform validate
 * Supplying Variable Values: Default value, -var flag, -var-file flag, terraform.tfvars / terraform.tfvars.json, .auto.tfvars / .auto.tfvars.json, TF_VAR_client_secret=""
+* * terraform plan -var=billing_code="ACCT82347923" -var=project="web-app"
 * * Order of Evaluation: TF_VAR_ environment variable > terraform.tfvars / terraform.tfvar.json > .auto.tfvars / .auto.tfvars.json > -var-file flag > -var flag > Command line prompt
+* Deploying the Updated Configuration
+* * export TF_VAR_aws_access_key=YOUR_ACCESS_KEY
+* * $env:TF_VAR_aws_access_key="YOUR_ACCESS_KEY"
 ## Section 5: Updating Your Configuration with More Resources

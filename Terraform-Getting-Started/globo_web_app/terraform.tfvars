@@ -1,3 +1,5 @@
 subscription_id = ""
 client_id       = ""
 client_secret   = ""
+billing_code = "ATTC3223434"
+project = "globo-web-app"
