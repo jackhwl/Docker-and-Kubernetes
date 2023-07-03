@@ -12,6 +12,7 @@
 *  Terraform v1.5.1 on windows_amd64
 ## Section 4: Using Input Variables and Outputs
 * Input Variable Syntax: var.<name_label>
+* Terraform Data Types: Primitive(string, number, bool), Collection(list, set, map), Structural(tuple, object), Any(list), Null
 * Local Values Syntax
 * TF_VAR_client_secret=""
 ## Section 5: Updating Your Configuration with More Resources
