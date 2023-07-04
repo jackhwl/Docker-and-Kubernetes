@@ -41,3 +41,7 @@ ARM_USE_MSI|Use Managed Service Identity
 * * terraform init
 * * terraform plan -var resource_group_name=vnet-main -out vent.tfplan
 * * terraform apply "vent.tfplan"
+
+## Section 3: Creating Multiple Providers
+* Using Multiple Instances
+* Security Network Deployment: security subscription, security-vnet has peering relationship with other vnet
