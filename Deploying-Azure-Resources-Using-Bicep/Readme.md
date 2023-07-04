@@ -85,4 +85,20 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * az network nsg list -g $rg -o table
 * * az network nsg rule list -g $rg --nsg-name nsg_withRDP
 * * az network nsg rule list -g $rg --nsg-name nsg_withoutRDP -o table
-
+* Deploying Dependent Resources Through Bicep
+* Delete RG
+* * az group delete -g $RG --yes
+* Extend our existing Subscription Scoped Bicep
+* code .\subscription-scope.bicep
+* Deploy RG
+* * az deployment sub create --location $location --template-file .\subscription-scope.bicep --parameters RG_Name=$RG
+* Check result
+* * az network nsg rule list -g $rg --nsg-name nsg -o table
+* Try with another RG
+* using one single Bicep file, create a resource group and also a network security group with a rule in it
+* * $RG_2="wenlin_bicepRG_2"
+* * az group show -g $RG_2
+* * az deployment sub create --location $location --template-file .\subscription-scope.bicep --parameters RG_Name=$RG_2
+* * az network nsg rule list -g $RG_2 --nsg-name nsg -o table
+* * az group delete -g $RG_2 --yes
+* Demo: Conditional Deployments and Dependent Resources
