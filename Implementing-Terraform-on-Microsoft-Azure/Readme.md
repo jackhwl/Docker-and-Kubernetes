@@ -36,3 +36,8 @@ ARM_USE_MSI|Use Managed Service Identity
 
 * Deploying a Virtual Network
 * Reviewing the Virtual Network Config
+* Deploying the Config with Cloud Shell
+* * in Azure Cloud Shell
+* * terraform init
+* * terraform plan -var resource_group_name=vnet-main -out vent.tfplan
+* * terraform apply "vent.tfplan"
