@@ -65,3 +65,5 @@ ARM_ENVIRONMENT|Azure environment: public, Gov., etc
 ARM_SUBSCRIPTION_ID|Azure subscription ID
 ARM_TENANT_ID|Azure AD tenant ID for service principal
 ARM_USE_MSI|Use Managed Service Identity
+
+* Reviewing the Security Configuration
