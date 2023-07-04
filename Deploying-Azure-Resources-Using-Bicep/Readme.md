@@ -78,3 +78,11 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * terraform apply -auto-approve
 * [if you want to use existing RG, you need import it to terraform ](https://gmusumeci.medium.com/how-to-import-an-existing-azure-resource-in-terraform-6d585f93ea02)
 * * az deployment group create --resource-group $RG --template-file .\aks.bicep --parameters tierType=test
+* Conditional Deployment
+* * az deployment group create --resource-group $RG --template-file .\nsg.bicep --parameters nsg_name=nsg_withRDP allow_rdp=true
+* * az deployment group create --resource-group $RG --template-file .\nsg.bicep --parameters nsg_name=nsg_withoutRDP allow_rdp=false
+* Check result
+* * az network nsg list -g $rg -o table
+* * az network nsg rule list -g $rg --nsg-name nsg_withRDP
+* * az network nsg rule list -g $rg --nsg-name nsg_withoutRDP -o table
+
