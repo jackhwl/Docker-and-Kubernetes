@@ -34,3 +34,5 @@ ARM_SUBSCRIPTION_ID|Azure subscription ID
 ARM_TENANT_ID|Azure AD tenant ID for service principal
 ARM_USE_MSI|Use Managed Service Identity
 
+* Deploying a Virtual Network
+* Reviewing the Virtual Network Config
