@@ -102,3 +102,25 @@ az deployment group create --resource-group $RG --template-file .\manual-arm-sto
 * * az network nsg rule list -g $RG_2 --nsg-name nsg -o table
 * * az group delete -g $RG_2 --yes
 * Demo: Conditional Deployments and Dependent Resources
+* Deployment at Scale
+# Deployment at scale 
+```
+$Vnets=5
+# Powershell
+for ($vnetno = 1 ; $vnetno -le $Vnets ; $vnetno++) {
+    $Vnetname = "PSVNET_$Vnetno"
+    az deployment group create --resource-group $RG --template-file .\vnet.bicep --parameters vnetname=$Vnetname
+}
+```
+* Check Result
+* * az network vnet list -g $RG -o table
+* Bicep loop over range
+* * az deployment group create --resource-group $RG --template-file .\vnet_at_scale.bicep --parameters vnet_prefix=bicepvnet vnet_count=$vnets
+* Check Result
+* * az network vnet list -g $RG -o table
+
+* Bicep loop over array
+* * az deployment group create --resource-group $RG --template-file .\vnet_array.bicep
+* Check Result
+* * az network vnet list -g $RG -o tsv
+* Demo: Deployment at Scale
