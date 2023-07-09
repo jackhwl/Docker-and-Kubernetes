@@ -68,3 +68,14 @@ ARM_USE_MSI|Use Managed Service Identity
 
 * Reviewing the Security Configuration
 * * Create a Terraform VM
+
+## Section 4: Using Azure for Remote State
+* Remote State Refresher
+* Azure Storage for Remote State: Supports locking, workspaces, multiple auth methods
+* Authentication Methods: 
+1. Managed Service Identity: use_msi
+2. Shared access signature token: sas_token
+3. Storage access key: access_key
+4. Service principal: client_id
+* Azure Storage Setup:
+* Deploying Azure Storage for Remote State
