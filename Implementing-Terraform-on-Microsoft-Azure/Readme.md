@@ -79,3 +79,4 @@ ARM_USE_MSI|Use Managed Service Identity
 4. Service principal: client_id
 * Azure Storage Setup:
 * Deploying Azure Storage for Remote State
+* Migrating Remote State
