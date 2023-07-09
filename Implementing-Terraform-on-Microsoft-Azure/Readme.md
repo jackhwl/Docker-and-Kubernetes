@@ -80,3 +80,4 @@ ARM_USE_MSI|Use Managed Service Identity
 * Azure Storage Setup:
 * Deploying Azure Storage for Remote State
 * Migrating Remote State
+* Implementing Remote State Migration
