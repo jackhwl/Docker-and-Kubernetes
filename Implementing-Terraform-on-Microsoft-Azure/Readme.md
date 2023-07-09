@@ -84,20 +84,23 @@ ARM_USE_MSI|Use Managed Service Identity
 
 ## Section 5: Using Azure DevOps
 * Infrastructure as Code Fundamentals
-* * Source Control Management: 
+  * Source Control Management: 
     - Multiple formats - Git, TFVC, Subversion
     - Multiple platforms - GitHub, BitBucket, GitLab, Azure DevOps
     - Enable collaboration
     - Version controlled
-* * CI/CD Pipelines:
+  * CI/CD Pipelines:
     - Multiple platforms - Jenkins, Azure DevOps, Bamboo
     - Continuous Integration for code check-in
     - Continuous Delivery of builds
     - Automated testing and validation
     - Multiple environments
       - Development, UAT, QA, Production
-* * Terraform Workspaces
+  * Terraform Workspaces
     - Common configuration
     - Individual state files
     - Multiple environments
     - terraform.workspace
+
+* Adopting Azure DevOps
+  
