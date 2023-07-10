@@ -12,3 +12,5 @@
   - SQL
   - AzureCosmosDB
   - AzureKeyVault
+* Application Security Groups (ASGs)
+  
