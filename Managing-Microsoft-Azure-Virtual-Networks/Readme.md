@@ -3,3 +3,12 @@
   - [101-vent-two-subnets](https://github.com/Azure/azure-quickstart-templates/tree/master/quickstarts/microsoft.network/vnet-two-subnets)
 * Configuring Network Security Groups
   - Network Security Groups (NSGs)
+* Service Tags: 
+  - Internet
+  - VirtualNetwork
+  - AzureLoadBalancer
+  - AzureTrafficManager
+  - Storage
+  - SQL
+  - AzureCosmosDB
+  - AzureKeyVault
