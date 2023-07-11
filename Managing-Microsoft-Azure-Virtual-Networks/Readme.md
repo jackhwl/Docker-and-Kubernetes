@@ -13,4 +13,5 @@
   - AzureCosmosDB
   - AzureKeyVault
 * Application Security Groups (ASGs)
-  
+* Demo: Creating an NSG
+  - Using Bicep: az deployment group create --resource-group WenlinVNetRG --template-file .\nsg.bicep --parameters nsg_name=nsg_withRDP2 allow_rdp=true
