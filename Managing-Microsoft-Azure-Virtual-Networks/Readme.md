@@ -43,3 +43,6 @@
         -Location eastus `
         -Name myNsg `
         -SecurityRules $webRule,$mgmtRule
+* VM IP Addressing Best Practices
+* Demo: Creating a Network Interface and Deploying a VM
+  - replace vm vnic to custom vnic
