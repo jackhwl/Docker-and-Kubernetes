@@ -46,3 +46,8 @@
 * VM IP Addressing Best Practices
 * Demo: Creating a Network Interface and Deploying a VM
   - replace vm vnic to custom vnic
+
+## Section 3: Implementing Traffic Control in a Microsoft Azure Virtual Network
+* [Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/)
+  - [Reference Architecture](https://learn.microsoft.com/en-us/azure/architecture/browse/)
+* Creating a Hybrid Cloud in Azure
