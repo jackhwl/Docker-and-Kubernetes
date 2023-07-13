@@ -18,7 +18,19 @@
     - Global VNet peering means you no longer need a VPN gateway for cross-region connectivity
 * Understand VNet Peering:
   - Network Peering: A seamless connection between two Azure virtual networks. The peered networks appear as one, for connectivity purposes.
-  
+* Demo: Configure VNet Peering
+```
+Connect-AzureRmAccount
+Set-AzureRmContext -Subscription 'a6dfa2b8-35fa-462c-8435-9b5da92438ae'
+```
+
+## Section 3: Troubleshooting VNet-to-VNet Connectivity
+* VNet Peering Troubleshooting Tips:
+  - Inter-VNet Troubleshooting Tips:
+    - Azure blocks ICMP between VNets and the Internet
+    - Simplify your NSGs as much as possible to reduce troubleshooting friction
+    - Azure portal Diagnose and solve problems/Resource Health blade is useful
+    - Network Watcher and Network Performance Monitor make troubleshooting much easier
 
      
 
