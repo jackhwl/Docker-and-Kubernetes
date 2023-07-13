@@ -16,6 +16,9 @@
     - Different pricing model from VNet peering
     - Make sure your VNet address spaces do not overlap
     - Global VNet peering means you no longer need a VPN gateway for cross-region connectivity
-    
+* Understand VNet Peering:
+  - Network Peering: A seamless connection between two Azure virtual networks. The peered networks appear as one, for connectivity purposes.
+  
+
      
 
