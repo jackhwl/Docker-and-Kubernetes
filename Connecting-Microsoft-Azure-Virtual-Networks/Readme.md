@@ -33,6 +33,17 @@ Set-AzureRmContext -Subscription 'a6dfa2b8-35fa-462c-8435-9b5da92438ae'
     - Network Watcher and Network Performance Monitor make troubleshooting much easier
 * Demo: Test Connectivity Between Peered VNets
 * Demo: Configure Name Resolution for Peered VNets
+* Network Watcher and the NPM Solution:
+  - tcping
+  - Network Watcher:
+    - Enable for your Azure region(s)
+    - Install VM extension
+    - Several tools
+  - Network Performance Monitor (NPM)
+
+
+
+
 
      
 
