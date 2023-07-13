@@ -32,6 +32,7 @@ Set-AzureRmContext -Subscription 'a6dfa2b8-35fa-462c-8435-9b5da92438ae'
     - Azure portal Diagnose and solve problems/Resource Health blade is useful
     - Network Watcher and Network Performance Monitor make troubleshooting much easier
 * Demo: Test Connectivity Between Peered VNets
+* Demo: Configure Name Resolution for Peered VNets
 
      
 
