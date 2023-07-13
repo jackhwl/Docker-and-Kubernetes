@@ -31,6 +31,7 @@ Set-AzureRmContext -Subscription 'a6dfa2b8-35fa-462c-8435-9b5da92438ae'
     - Simplify your NSGs as much as possible to reduce troubleshooting friction
     - Azure portal Diagnose and solve problems/Resource Health blade is useful
     - Network Watcher and Network Performance Monitor make troubleshooting much easier
+* Demo: Test Connectivity Between Peered VNets
 
      
 
