@@ -40,6 +40,8 @@ Set-AzureRmContext -Subscription 'a6dfa2b8-35fa-462c-8435-9b5da92438ae'
     - Install VM extension
     - Several tools
   - Network Performance Monitor (NPM)
+  - Demo: Use Azure Network Watcher
+  
 
 
 
