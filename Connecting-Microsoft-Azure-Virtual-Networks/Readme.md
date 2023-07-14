@@ -41,7 +41,7 @@ Set-AzureRmContext -Subscription 'a6dfa2b8-35fa-462c-8435-9b5da92438ae'
     - Several tools
   - Network Performance Monitor (NPM)
   - Demo: Use Azure Network Watcher
-  
+  - Demo: Use Network Performance Monitor
 
 
 
