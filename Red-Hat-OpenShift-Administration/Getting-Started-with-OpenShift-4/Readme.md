@@ -6,3 +6,4 @@
   - Demo: Containers
   - Introduction to Kubernetes
   - Demo: Kubernetes
+  - Introduction to OpenShift
