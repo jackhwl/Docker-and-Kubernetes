@@ -5,3 +5,4 @@
   - Introduction to Containers
   - Demo: Containers
   - Introduction to Kubernetes
+  - Demo: Kubernetes
