@@ -4,3 +4,4 @@
   - Demo: Demo Environment
   - Introduction to Containers
   - Demo: Containers
+  - Introduction to Kubernetes
