@@ -6,3 +6,4 @@
   - Containers Vs Virtual Machine
   - Why developers should use containers
   - Install docker on Linux
+  - Install docker on Mac
