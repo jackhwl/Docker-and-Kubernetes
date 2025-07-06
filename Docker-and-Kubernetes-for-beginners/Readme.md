@@ -8,3 +8,14 @@
   - Install docker on Linux
   - Install docker on Mac
   - Run your first container
+  - Docker cli commands
+    - docker pull
+    - docker run
+    - docker ps
+    - docker ps -a
+    - docker stop <id>
+    - docker run <id>
+    - docker images
+    - docker rmi <id>
+    - docker run -d <image_name>
+    - docker exec -it <container_id> /bin/bash
