@@ -21,3 +21,4 @@
     - docker exec -it <container_id> /bin/bash
 ## Docker essentials for beginners
   - Key Docker Concepts: Images, Containers, Dockerfiles
+  - Writing a Dockerfile and building a container image
