@@ -19,3 +19,5 @@
     - docker rmi <id>
     - docker run -d <image_name>
     - docker exec -it <container_id> /bin/bash
+## Docker essentials for beginners
+  - Key Docker Concepts: Images, Containers, Dockerfiles
