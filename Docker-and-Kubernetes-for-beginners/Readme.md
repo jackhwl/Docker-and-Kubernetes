@@ -22,3 +22,6 @@
 ## Docker essentials for beginners
   - Key Docker Concepts: Images, Containers, Dockerfiles
   - Writing a Dockerfile and building a container image
+    - docker build -t vite-test .
+    - docker run -p 5173:5173 vite-test
+    
