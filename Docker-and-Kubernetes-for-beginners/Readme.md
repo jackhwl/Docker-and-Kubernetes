@@ -24,4 +24,17 @@
   - Writing a Dockerfile and building a container image
     - docker build -t vite-test .
     - docker run -p 5173:5173 vite-test
-    
+  - Managing containers: Running, Stopping, Removing
+    - docker run -v $(pwd):/app <image>
+    - docker run -it <imagge> sh
+    - docker ps -a
+    - docker logs <container>
+    - docker attach <container>
+    - docker stop $<container>
+    - docker stop $(docker ps -q)
+    - docker start <container>
+    - docker rm <container>
+    - docker rm -f <container>
+    - docker kill <container>
+    - docker <container> prune
+    - docker cp <container>:/path/to/file ./
