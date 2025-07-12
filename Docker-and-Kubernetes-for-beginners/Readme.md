@@ -48,3 +48,4 @@
   - Container networking models
     - docker run --rm -it busybox sh
     - docker network ls
+  - Bridge, host, and overlay networks
