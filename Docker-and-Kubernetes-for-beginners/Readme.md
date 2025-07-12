@@ -41,3 +41,5 @@
   - Containerizing a simple Node.js/Python app
     - docker build -t express-app .
     - docker run -p 4000:3000 -e PORT=3000 -rm express-app
+  - Docker multi-stage build
+    - docker build -t express-multistage .
