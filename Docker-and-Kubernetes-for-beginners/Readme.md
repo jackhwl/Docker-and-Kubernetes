@@ -49,3 +49,10 @@
     - docker run --rm -it busybox sh
     - docker network ls
   - Bridge, host, and overlay networks
+  - Common Container Networking Commands
+    - docker network inspect <network-name>
+    - docker network create <network-name>
+    - docker run --network my-network <container>
+    - docker network connect my-network <container>
+    - docker network disconnect my-network <container>
+    - docker network rm my-network
