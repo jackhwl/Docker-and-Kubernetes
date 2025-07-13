@@ -64,3 +64,10 @@
   - Summary
 ## Docker compose and Multi container
   - Intro to Docker Compose
+  - Dockerizing a multi-container apps (Frontend + Backend + Database)
+    - backend
+      - npm init -y
+      - npm i expree pg
+    - frondend
+      - npm create vite@5 .
+        - React, javascript
