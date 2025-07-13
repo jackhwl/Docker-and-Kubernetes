@@ -73,3 +73,5 @@
         - React, javascript
   - Hands-on: Setting up a multi-service app using docker-compose.yml
     - docker compose up
+## Introduction to Kubernetes
+  - Why Kubernetes? How it solves container
