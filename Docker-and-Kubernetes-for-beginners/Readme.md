@@ -61,3 +61,6 @@
     - docker run --network my-bridge --name container1 -d nginx
     - docker run --network my-bridge --name container2 -d alpine sleep 3600
     - docker exec -it container2 ping container1
+  - Summary
+## Docker compose and Multi container
+  - Intro to Docker Compose
