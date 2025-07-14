@@ -75,3 +75,6 @@
     - docker compose up
 ## Introduction to Kubernetes
   - Why Kubernetes? How it solves container
+  - What is a Pod
+  - Ways to install Kubernetes
+  
