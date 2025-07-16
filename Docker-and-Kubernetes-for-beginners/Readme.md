@@ -78,3 +78,8 @@
   - What is a Pod
   - Ways to install Kubernetes
   - Kubernetes Architecture
+    - kubelet - node agent that runs on every node ensures pods are healthy
+    - cri - container runtime interface
+      - docker-crio
+      - containerd - 1.24+
+  - Setup a local Kubernetes cluster on Linux
