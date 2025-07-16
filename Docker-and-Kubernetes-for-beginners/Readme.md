@@ -77,4 +77,4 @@
   - Why Kubernetes? How it solves container
   - What is a Pod
   - Ways to install Kubernetes
-  
+  - Kubernetes Architecture
