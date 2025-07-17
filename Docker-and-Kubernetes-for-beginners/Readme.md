@@ -83,3 +83,11 @@
       - docker-crio
       - containerd - 1.24+
   - Setup a local Kubernetes cluster on Linux
+  - Setup a local Kubernetes cluster on Mac
+    - minikube start --nodes 3 --kubernetes-version=v1.33.1
+    - brew install kubectl
+    - brew install kubernetes-cli
+    - kubectl get nodes
+    - kubectl get pods
+    - kubectl get pods -A
+
