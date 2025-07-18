@@ -90,4 +90,7 @@
     - kubectl get nodes
     - kubectl get pods
     - kubectl get pods -A
-
+  - Other installation options for local kubernetes
+    - kind
+    - k3d
+  
