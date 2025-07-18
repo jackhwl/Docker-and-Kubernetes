@@ -93,4 +93,5 @@
   - Other installation options for local kubernetes
     - kind
     - k3d
+  - What is KinD Cluster
   
