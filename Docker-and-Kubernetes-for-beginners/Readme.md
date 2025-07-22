@@ -94,4 +94,14 @@
     - kind
     - k3d
   - What is KinD Cluster
-  
+  - Setup a Multi-Node Kubernetes Cluster using KinD
+    - brew install kind
+    - kind create cluster --name first-cluster
+    - docker exec -it first-cluster-control-plane sh
+    - kind create cluster --name=multi-node --config=config.yaml
+    - kind get clusters
+    - switch the context
+      - kubectl config use-contet kind-first-cluster
+    - kubectl cluster-info --context kind-multi-node
+    - kind delete cluster --name first-cluster
+    - kind delete cluster --name multi-node
