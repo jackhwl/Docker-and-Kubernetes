@@ -8,3 +8,7 @@
   - Important Standards and Specifications
   - High-level Workflow
     ![High-level Workflow](high-level-workflow.png)
+2. Docker and Containers
+  - Docker Inc vs docker
+  - Docker Architecture
+  - Docker Demo
