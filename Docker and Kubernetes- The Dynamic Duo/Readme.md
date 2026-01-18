@@ -3,3 +3,8 @@
   - Fixing Problems
   - Shared Kernels and VM Isolation
   - Linux vs. Windows vs. Mac
+  - The Microservices Revolution
+  - The Need for Orchestration
+  - Important Standards and Specifications
+  - High-level Workflow
+    ![High-level Workflow](high-level-workflow.png)
