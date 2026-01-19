@@ -15,3 +15,6 @@
 3. Kubernetes and Orchestration
   - Kubernetes
   - The OS of the Cloud
+  - Orchestration
+  - Kubernetes Demo
+  - GitOps Workflows
