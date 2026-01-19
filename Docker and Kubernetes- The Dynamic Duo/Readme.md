@@ -12,3 +12,6 @@
   - Docker Inc vs docker
   - Docker Architecture
   - Docker Demo
+3. Kubernetes and Orchestration
+  - Kubernetes
+  - The OS of the Cloud
